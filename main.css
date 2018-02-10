@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CUSOTM STYLES */
+
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Raleway:400,600");
+
+:root {
+  --pink: #e2c7c0;
+  --dark-blue: #2c3d51;
+  --med-blue: #5a7483;
+  --light-blue: #819eac;
+  --poiret: "Poiret One", cursive;
+  --raleway: "Raleway", sans-serif;
+}
+
+/* HEADER */
+
+header,
+footer {
+  background-color: var(--pink);
+}
+
+.menu {
+  color: var(--dark-blue);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: var(--raleway);
+  text-transform: uppercase;
+  padding: 1.5em;
+}
+
+.menu h2 {
+  font-size: 1.4em;
+}
+
+.menu nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2em;
+  justify-content: space-around;
+}
+
+.menu a {
+  color: var(--dark-blue);
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: var(--med-blue);
+  color: var(--pink);
+}
+
+.title-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5em;
+}
+
+.title-container h1,
+.title-container h3 {
+  color: var(--dark-blue);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title-container h1 {
+  font-family: var(--poiret);
+  font-size: 3.2em;
+  padding: 1rem;
+}
+
+.title-container h3 {
+  font-family: var(--raleway);
+  font-size: 1.2em;
+}
+
+.title-container span {
+  color: #ff1b9b;
+}
+
+/* ABOUT */
+
+#about {
+  display: grid;
+  grid-template-columns: [col-start] 1fr [col-mid] 2fr [col-end];
+  grid-template-rows: [row-start] 1fr [row-end];
+}
+
+#about-img {
+  grid-column: col-start / col-mid;
+  margin: 2rem;
+}
+
+#about-text {
+  grid-column: col-mid / col-end;
+  margin: 4rem;
+}
