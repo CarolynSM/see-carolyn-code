@@ -348,6 +348,10 @@ header {
   color: var(--pink);
 }
 
+#resume-icon {
+  width: 250px;
+}
+
 #resume-img {
   align-items: center;
   display: flex;
@@ -383,7 +387,9 @@ header {
 .modal-content {
   margin: auto;
   display: block;
-  max-width: 70vh;
+  max-width: 80vw;
+  overflow: scroll;
+  padding-bottom: 10rem;
 }
 
 .close {
