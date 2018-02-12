@@ -2,16 +2,27 @@
   .menu {
     display: none;
   }
+  #mobile-nav-icon {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    height: 10vh;
+  }
   .title-container {
     align-items: flex-start;
+    padding-top: 10vh;
     padding: 1rem;
   }
   .title-container h1 {
-    font-size: 1.5em;
-    padding: 1rem 0;
+    font-size: 1.4em;
+    padding: 0.5em 0;
+    margin-right: 2rem;
+    z-index: 1;
   }
   .title-container h3 {
     font-size: 1rem;
+    z-index: 1;
   }
   /* ABOUT */
   #about {
@@ -65,6 +76,7 @@
   }
   .project-icon {
     margin: 1rem;
+    z-index: -2;
   }
   .project-img {
     width: 70vw;

@@ -13,3 +13,15 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 };
+
+function mobileNavIcon(x) {
+  x.classList.toggle("change");
+  var panel = document.querySelector(".panel");
+  if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = "400px";
+  }
+}
+
+document.querySelector("#mobile-nav-icon").addEventListener("click", mobileNavIcon(event));

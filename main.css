@@ -221,6 +221,10 @@ header {
   color: #ff1b9b;
 }
 
+/* .panel {
+  display: none;
+} */
+
 /* ABOUT */
 
 #about {
@@ -524,6 +528,84 @@ footer small {
 }
 
 footer a {
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+/* MOBILE NAV */
+
+/* MOBILE NAV */
+
+/* Mobile Menu Icon */
+#mobile-nav-icon {
+  display: none;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--dark-blue);
+  margin: 3px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/* Mobile Menu Toggle */
+.accordion {
+  align-items: flex-end;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: var(--pink);
+  color: var(--dark-blue);
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.4s;
+}
+
+/* Menu Items */
+
+.mobile-menu {
+  font-family: "Shadows Into Light", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+ul .mobile-menu {
+  padding: 0;
+}
+
+.mobile-menu li {
+  border: none;
+  font-family: var(--raleway);
+  font-size: 1.4em;
+  margin-top: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 350px;
+}
+
+.mobile-menu li a {
   color: var(--dark-blue);
   text-decoration: none;
 }
