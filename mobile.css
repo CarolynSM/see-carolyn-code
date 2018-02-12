@@ -1,0 +1,97 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+  .title-container {
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .title-container h1 {
+    font-size: 1.5em;
+    padding: 1rem 0;
+  }
+  .title-container h3 {
+    font-size: 1rem;
+  }
+  /* ABOUT */
+  #about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  #about-img {
+    margin: 1rem;
+  }
+  #about-img img {
+    height: 70vw;
+    margin: 0;
+    width: 70vw;
+  }
+  #about h2 {
+    text-align: center;
+  }
+  #about-text {
+    margin: 0 0.5em;
+  }
+  /* RESUME */
+  #resume {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  #resume-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  #resume-text h2 {
+    text-align: center;
+  }
+  #resume .button {
+    margin: 1rem;
+  }
+  /* PROJECTS */
+  #projects {
+    padding: 0;
+  }
+  #projects h2 {
+    padding: 1rem;
+    text-align: center;
+  }
+  #projects-grid {
+    flex-direction: column;
+  }
+  .project-icon {
+    margin: 1rem;
+  }
+  .project-img {
+    width: 70vw;
+  }
+  .overlay {
+    opacity: 1;
+  }
+  /* CONTACT */
+  #contact {
+    padding: 1rem;
+  }
+  #contact h2 {
+    padding: 0.5em;
+    text-align: center;
+  }
+  .contact-icon {
+    padding: 0.5em;
+  }
+  /* FOOTER */
+  footer {
+    align-items: center;
+    flex-direction: column;
+  }
+  footer small {
+    padding: 0.3em 0;
+  }
+  #pipe {
+    display: none;
+  }
+}
