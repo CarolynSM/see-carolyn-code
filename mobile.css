@@ -63,6 +63,9 @@
   #resume .button {
     margin: 1rem;
   }
+  .modal-content {
+    max-width: 95vw;
+  }
   /* PROJECTS */
   #projects {
     padding: 0;
