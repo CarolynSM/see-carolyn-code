@@ -67,7 +67,7 @@ function calculateAnimations() {
       from: 0.5,
       to: 1
     },
-    { range: [fin * 0.3, fin], selector: ".h", type: "change", style: "color", to: "#1fd1ec" },
+    { range: [fin * 0.3, fin], selector: ".h", type: "change", style: "color", to: "#1f87c3" },
 
     /* animate Os */
     { range: [fin * 0.1, fin], selector: ".o", type: "randomizeColor" },

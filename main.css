@@ -137,7 +137,7 @@ table {
   --dark-blue: #2c3d51;
   --med-blue: #5a7483;
   --light-blue: #819eac;
-  --poiret: "Poiret One", cursive;
+  --poiret: "Poiret One", sans-serif;
   --raleway: "Raleway", sans-serif;
 }
 
@@ -147,6 +147,7 @@ header {
   background-color: var(--pink);
   position: fixed;
   width: 100vw;
+  z-index: 1;
 }
 
 #logo-link {
@@ -262,7 +263,6 @@ header {
 
 #about li h3 {
   font-size: 1.2rem;
-  font-weight: bold;
   margin: 0.5em;
 }
 
@@ -280,7 +280,7 @@ header {
 /* RESUME */
 
 #resume {
-  background-color: var(--med-blue);
+  background-color: white;
   display: grid;
   grid-template-columns: [col-start] 3fr [col-mid] 1fr [col-end];
   grid-template-rows: [row-start] 1fr [row-end];
@@ -296,7 +296,7 @@ header {
 }
 
 #resume-text h2 {
-  color: var(--pink);
+  color: var(--med-blue);
   font-family: var(--poiret);
   font-size: 1.8em;
   margin: 1rem 0;
@@ -315,7 +315,7 @@ header {
 }
 
 #resume h3 {
-  color: var(--pink);
+  color: var(--med-blue);
   font-family: var(--raleway);
   font-size: 1.2em;
   padding: 0 0.5em;
@@ -334,8 +334,8 @@ header {
 }
 
 #resume .button {
-  background-color: var(--pink);
-  color: var(--med-blue);
+  background-color: var(--med-blue);
+  color: white;
   display: flex;
   align-items: center;
   font-family: var(--raleway);
@@ -349,7 +349,6 @@ header {
 
 #resume .button:hover {
   background-color: var(--dark-blue);
-  color: var(--pink);
 }
 
 #resume-icon {
@@ -363,15 +362,19 @@ header {
   grid-column: col-mid / col-end;
 }
 
+#resume-img img {
+  border: 1px solid var(--med-blue);
+}
+
 #resume-img p {
-  color: var(--pink);
+  color: var(--med-blue);
   font-family: var(--raleway);
   font-size: 1rem;
   margin: 1rem;
 }
 
 #resume-icon:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .modal {
@@ -417,13 +420,15 @@ header {
 
 #projects {
   align-items: center;
+  background-color: var(--med-blue);
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  z-index: 0;
 }
 
 #projects h2 {
-  color: var(--dark-blue);
+  color: var(--pink);
   font-family: var(--poiret);
   font-size: 1.7em;
   padding: 2rem;
@@ -439,6 +444,7 @@ header {
 .project-icon {
   margin: 2rem;
   position: relative;
+  /* z-index: -2; */
 }
 
 .project-img {
@@ -449,8 +455,8 @@ header {
 
 .overlay {
   align-items: center;
-  background-color: rgba(44, 61, 81, 0.9);
-  color: var(--pink);
+  background-color: rgba(247, 217, 208, 0.8);
+  color: var(--dark-blue);
   display: flex;
   flex-direction: column;
   position: absolute;
