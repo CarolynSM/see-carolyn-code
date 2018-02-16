@@ -218,7 +218,7 @@ header {
   font-size: 1.2em;
 }
 
-.title-container span {
+span {
   color: #ff1b9b;
 }
 
@@ -455,7 +455,7 @@ header {
 
 .overlay {
   align-items: center;
-  background-color: rgba(247, 217, 208, 0.8);
+  background-color: rgba(247, 217, 208, 0.9);
   color: var(--dark-blue);
   display: flex;
   flex-direction: column;
