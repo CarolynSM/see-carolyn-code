@@ -364,13 +364,13 @@ span {
 
 #resume-img {
   align-items: center;
+  border: 1px solid var(--med-blue);
   display: flex;
   flex-direction: column;
   cursor: pointer;
 }
 
 #resume-img img {
-  border: 1px solid var(--med-blue);
   cursor: pointer;
 }
 
