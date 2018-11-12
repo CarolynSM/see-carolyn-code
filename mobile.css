@@ -1,3 +1,17 @@
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 1030px) {
+  #about-img {
+    margin-left: 2rem;
+  }
+  .project-icon {
+    margin: 1rem;
+  }
+  .overlay {
+    opacity: 1;
+  }
+}
+
+/* Mobile Phones */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .menu {
     display: none;

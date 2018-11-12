@@ -222,6 +222,12 @@ span {
   color: #ff1b9b;
 }
 
+.section-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 /* .panel {
   display: none;
 } */
@@ -229,19 +235,20 @@ span {
 /* ABOUT */
 
 #about {
-  display: grid;
-  grid-template-columns: [col-start] 1fr [col-mid] 2fr [col-end];
-  grid-template-rows: [row-start] 1fr [row-end];
-  margin: 0 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
 #about-img {
-  grid-column: col-start / col-mid;
-  margin: 4rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 #about-text {
-  grid-column: col-mid / col-end;
   margin: 6rem 2rem;
 }
 
@@ -249,7 +256,7 @@ span {
   color: var(--dark-blue);
   font-family: var(--poiret);
   font-size: 1.7em;
-  margin: 1rem 0;
+  margin: 1rem;
   text-transform: uppercase;
 }
 
@@ -281,18 +288,18 @@ span {
 
 #resume {
   background-color: white;
-  display: grid;
-  grid-template-columns: [col-start] 3fr [col-mid] 1fr [col-end];
-  grid-template-rows: [row-start] 1fr [row-end];
-  padding: 6rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #resume-text {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  grid-column: col-start / col-mid;
-  margin-left: 6rem;
+  margin: 3rem;
 }
 
 #resume-text h2 {
@@ -359,11 +366,12 @@ span {
   align-items: center;
   display: flex;
   flex-direction: column;
-  grid-column: col-mid / col-end;
+  cursor: pointer;
 }
 
 #resume-img img {
   border: 1px solid var(--med-blue);
+  cursor: pointer;
 }
 
 #resume-img p {
@@ -444,13 +452,12 @@ span {
 .project-icon {
   margin: 2rem;
   position: relative;
-  /* z-index: -2; */
 }
 
 .project-img {
   display: block;
-  height: 30vh;
-  width: 20vw;
+  /* height: 30vh;
+  width: 20vw; */
 }
 
 .overlay {
@@ -479,6 +486,7 @@ span {
   font-size: 1.3em;
   padding: 5rem 0 1rem 0;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .overlay p {
